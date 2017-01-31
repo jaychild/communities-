@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# communities-
+A location based social site experimenting with Google location APIs
+>>>>>>> dc4fb3ea676eda2f69128080e0ff43d1be526280
