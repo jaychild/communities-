@@ -1,0 +1,8 @@
+                       Prefix Verb   URI Pattern                              Controller#Action
+ new_location_favorite_places GET    /location/favorite_places/new(.:format)  location/favorite_places#new
+edit_location_favorite_places GET    /location/favorite_places/edit(.:format) location/favorite_places#edit
+     location_favorite_places GET    /location/favorite_places(.:format)      location/favorite_places#show
+                              PATCH  /location/favorite_places(.:format)      location/favorite_places#update
+                              PUT    /location/favorite_places(.:format)      location/favorite_places#update
+                              DELETE /location/favorite_places(.:format)      location/favorite_places#destroy
+                              POST   /location/favorite_places(.:format)      location/favorite_places#create
