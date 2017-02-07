@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170131211854) do
+ActiveRecord::Schema.define(version: 20170207193328) do
+
+  create_table "favorite_places", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address_line"
+    t.string   "region"
+    t.string   "country"
+    t.string   "post_code"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "google_services", force: :cascade do |t|
     t.string   "name"

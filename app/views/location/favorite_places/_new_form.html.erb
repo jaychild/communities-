@@ -1,0 +1,13 @@
+<fieldset>
+  <legend>New Favorite Place</legend>
+  <%= form_for @favorite_place, url: 'location/favorite_places#create', method: :post  do |f| %>
+
+      Name: <%= f.text_field(:name) %>
+      Address: <%= f.text_field(:address_line) %>
+      Region: <%= f.text_field(:region) %>
+      Country: <%= f.text_field(:country) %>
+      Post Code: <%= f.text_field(:post_code) %>
+
+      <%= f.submit 'Save' %>
+  <% end %>
+</fieldset>

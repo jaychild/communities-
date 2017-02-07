@@ -1,0 +1,9 @@
+<fieldset>
+  <legend>Locations</legend>
+  <%= form_for :location_search_service, url: new_google_services_location_search_path, method: :get, remote: true do |f| %>
+
+      Location Address: <%= f.text_field :location %>
+      <%= f.submit 'search' %>
+
+  <% end %>
+</fieldset>
