@@ -14,3 +14,25 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+    var $search_field = $('#location_search_service_location');
+    var $search_button = $('.search_location_search');
+
+    $search_button.prop('disabled', true);
+
+    $search_field.on('input', function(){
+        var search_value = $search_field.val();
+
+        if(search_value.val == ''){
+            $('.search_location_search').prop('disabled', true);
+        }else{
+            $('.search_location_search').prop('disabled', false);
+        }
+        console.log($search_field.val());
+    });
+});
+
+
+

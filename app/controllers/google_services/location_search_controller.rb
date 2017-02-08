@@ -16,7 +16,6 @@ class GoogleServices::LocationSearchController < ApplicationController
         address_line: api_response[:addr], region: api_response[:addr_region],
         country: api_response[:addr_country], post_code: api_response[:addr_postal_code]
     )
-    # raise @favorite_place.inspect
   end
 
   private

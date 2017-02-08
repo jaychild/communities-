@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Region</th>
+      <th>Country</th>
+      <th>Post Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @favorite_places.each do |location| %>
+      <tr>
+        <td><%= location.name %></td>
+        <td><%= location.address_line %></td>
+        <td><%= location.region %></td>
+        <td><%= location.country %></td>
+        <td><%= location.post_code %></td>
+      </tr>
+      
+    <% end %>
+  </tbody>
+</table>
