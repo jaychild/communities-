@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe FavoritePlacesController, type: :controller do
-
-end
+# RSpec.describe FavoritePlacesController, type: :controller do
+#
+# end

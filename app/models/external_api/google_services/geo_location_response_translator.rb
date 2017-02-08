@@ -1,4 +1,4 @@
-class ExternalApi::GoogleServices::ResponseTranslator
+class ExternalApi::GoogleServices::GeoLocationResponseTranslator
   COLLECTION = "results"
   ADDR_KEY = "address_components"
   ATTR_KEY = "short_name"

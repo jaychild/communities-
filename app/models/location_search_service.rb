@@ -14,6 +14,6 @@ class LocationSearchService
   private
 
   def location_api
-    ExternalApi::GoogleServices::Location
+    ExternalApi::GoogleServices::GeoLocation
   end
 end
