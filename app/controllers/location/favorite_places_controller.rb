@@ -1,8 +1,4 @@
-class Location::FavoritePlacesController < ApplicationController
-  skip_before_filter :verify_authenticity_token
-  before_action :instantiate_google_service, only: [:new]
-  before_action :all_favorite_places
-
+class Location::FavoritePlacesController < LocationController
   def index
 
   end
@@ -16,19 +12,11 @@ class Location::FavoritePlacesController < ApplicationController
         post_code: params[:favorite_place][:post_code]
     )
     if location.save
-      flash[:success] = 'Location added to your favorite places!'
+      flash[:notice] = 'Location added to your favorite places!'
     else
-      flash[:error] = 'Oops, something went wrong'
+      flash[:error] = "Error: #{location.errors.full_messages.join(', ')}"
     end
     redirect_to root_path
-  end
-
-  def new
-    # raise @location_search_service.inspect
-    # respond_to do |format|
-    #   format.html
-    #   format.js
-    # end
   end
 
   private
@@ -36,9 +24,4 @@ class Location::FavoritePlacesController < ApplicationController
   def instantiate_google_service
     @location_search_service ||= LocationSearchService.new(params[:location])
   end
-
-  def all_favorite_places
-    @favorite_places = FavoritePlace.all
-  end
-
 end

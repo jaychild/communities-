@@ -1,11 +1,21 @@
 <h1>Favorite Places</h1>
 
-<div id="favourite_places_index" class="favorite_places_table">
-  <%= render 'index' %>
-</div>
+<div class="container">
+  <div class="page">
+    <div id="favourite_places_index" class="favorite_places_table">
+      <%= render 'index' %>
+    </div>
 
-<%= render 'google_services/location_search/form' %>
+    <div class="errors">
 
-<div id="location_search_results" class="location_results">
-  <%#= render 'new_form' %>
+    </div>
+
+    <div class="search_form">
+      <%= render 'google_services/location_search/form' %>
+    </div>
+
+    <div id="location_search_results" class="location_results">
+      <%#= render 'new_form' %>
+    </div>
+  </div>
 </div>

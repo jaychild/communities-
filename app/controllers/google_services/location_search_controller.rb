@@ -1,12 +1,8 @@
-class GoogleServices::LocationSearchController < ApplicationController
+class GoogleServices::LocationSearchController < LocationController
   before_action :instantiate_google_service, only: [:new]
   after_action :respond_with_js, only: [:new]
 
   def index
-
-  end
-
-  def show
 
   end
 

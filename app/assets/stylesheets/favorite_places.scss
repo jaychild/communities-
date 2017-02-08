@@ -2,6 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+div{
+  font-family: Courier;
+  magin: 10px;
+  padding-top: 10px;
+}
+
+.container{
+  width: 70%;
+  padding: 20px;
+}
+
+.page{
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+h1{
+  font-family: Courier;
+}
+
+body {
+  background-color: #c5e6e4;
+}
 
 table {
   font-family: arial, sans-serif;
@@ -17,4 +42,30 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.favorite_places_table{
+  background-color: white;
+  border: 1px solid black;
+}
+
+.search_form{
+  background-color: white;
+}
+
+.location_results{
+  background-color: white;
+}
+
+
+.errors p{
+  background-color: #dd4849;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+span{
+  display: inline-block;
+  float: left;
+  padding: 5px;
 }

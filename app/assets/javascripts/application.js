@@ -18,19 +18,18 @@
 
 $(document).ready(function(){
     var $search_field = $('#location_search_service_location');
-    var $search_button = $('.search_location_search');
+    var $search_button = $('#search_locations');
+    var $errors = $('.errors');
 
-    $search_button.prop('disabled', true);
-
-    $search_field.on('input', function(){
+    $search_button.on('click', function(e){
         var search_value = $search_field.val();
-
-        if(search_value.val == ''){
-            $('.search_location_search').prop('disabled', true);
+        if(search_value === ''){
+            $errors.html('<p>Please specify a location!</p>');
+            e.preventDefault();
         }else{
-            $('.search_location_search').prop('disabled', false);
+            $errors.html('')
         }
-        console.log($search_field.val());
+
     });
 });
 

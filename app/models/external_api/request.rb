@@ -7,6 +7,6 @@ class ExternalApi::Request
     response = Net::HTTP.get_response(uri)
     JSON.parse(response.body)
   rescue
-    raise 'Failed to open connection to external api'
+    {'status' => 'could not establish connection to api.'}
   end
 end

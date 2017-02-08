@@ -36,7 +36,7 @@ describe ExternalApi::Request do
         let(:url){ 'https://api.doesnot/exist/json?address=' }
         let(:data){ '' }
         it 'should try and make request' do
-          expect{request.make_request(url, data)}.to raise_error(RuntimeError)
+          expect(request.make_request(url, data)['status']).to eq('could not establish connection to api.')
         end
       end
     end

@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ExternalApi::GoogleService.create(name: 'geo_location', url: 'https://maps.googleapis.com/maps/api/geocode/json?address=', key: 'geo_loc')
