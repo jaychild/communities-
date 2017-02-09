@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170207193328) do
 
-  create_table "favorite_places", force: :cascade do |t|
+  create_table "favourite_places", force: :cascade do |t|
     t.string   "name"
     t.string   "address_line"
     t.string   "region"

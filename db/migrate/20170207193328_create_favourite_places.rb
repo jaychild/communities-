@@ -1,6 +1,6 @@
-class CreateFavoritePlaces < ActiveRecord::Migration[5.0]
+class CreateFavouritePlaces < ActiveRecord::Migration[5.0]
   def change
-    create_table :favorite_places do |t|
+    create_table :favourite_places do |t|
       t.string :name
       t.string :address_line
       t.string :region

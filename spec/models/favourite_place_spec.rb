@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FavoritePlace do
+RSpec.describe FavouritePlace do
   context 'creating a favorite place' do
     context 'validations' do
       context 'name is missing' do

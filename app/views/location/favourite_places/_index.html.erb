@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @favorite_places.each do |location| %>
+    <% @favourite_places.each do |location| %>
       <tr>
         <td><%= location.name %></td>
         <td><%= location.address_line %></td>
@@ -17,7 +17,6 @@
         <td><%= location.country %></td>
         <td><%= location.post_code %></td>
       </tr>
-      
     <% end %>
   </tbody>
 </table>

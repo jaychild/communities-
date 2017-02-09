@@ -8,7 +8,7 @@ class GoogleServices::LocationSearchController < LocationController
 
   def new
     api_response = @location_search_service.google_the_location
-    @favorite_place = FavoritePlace.new(
+    @favourite_place = FavouritePlace.new(
         address_line: api_response[:addr], region: api_response[:addr_region],
         country: api_response[:addr_country], post_code: api_response[:addr_postal_code]
     )

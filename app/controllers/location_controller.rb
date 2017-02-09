@@ -4,6 +4,6 @@ class LocationController < ApplicationController
   before_action :all_favorite_places
 
   def all_favorite_places
-    @favorite_places = FavoritePlace.all
+    @favourite_places = FavouritePlace.all
   end
 end

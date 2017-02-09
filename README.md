@@ -22,6 +22,6 @@ Once all set-up with the server running, just start searching for your favorite 
 
 * ...
 =======
-# favorite places-
-A location based social site experimenting with Google location APIs
+# favourite places-
+A single page site experimenting with Google location APIs
 >>>>>>> dc4fb3ea676eda2f69128080e0ff43d1be526280

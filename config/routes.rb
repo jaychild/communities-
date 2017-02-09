@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :location do
-    resources :favorite_places
+    resources :favourite_places
   end
 
   namespace :google_services do
@@ -9,6 +9,6 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: 'location/favorite_places#index'
+  root to: 'location/favourite_places#index'
 
 end

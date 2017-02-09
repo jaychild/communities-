@@ -1,5 +1,5 @@
 <fieldset>
-  <legend>Favorite Place</legend>
+  <legend>Favourite Place</legend>
   <%= form_for :location_search_service, url: new_google_services_location_search_path, method: :get, remote: true do |f| %>
       Search for a place like: <%= f.text_field :location %>
       <%= f.submit('search', class: 'submit_location_search', id: 'search_locations') %>
